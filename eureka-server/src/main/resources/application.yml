@@ -1,11 +1,13 @@
-server:
-  port: 8761
-
+#server:
+# port: 8761
+#自定义地址名称
 eureka:
-  instance:
-    hostname: localhost
   client:
     registerWithEureka: false
-    fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://localhost:8761/eureka/
+      # defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#client自我保护，开发环境关掉，防止调用时是关的而server显示是开的
+  server:
+    enable-self-preservation: false
+
