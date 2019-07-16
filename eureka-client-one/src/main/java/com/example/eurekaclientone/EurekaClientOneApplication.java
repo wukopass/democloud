@@ -31,4 +31,9 @@ public class EurekaClientOneApplication {
         return map;
     }
 
+    @RequestMapping("/msg")
+    public String getMsg() {
+        return "hello i am msg 2";
+    }
+
 }

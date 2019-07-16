@@ -1,15 +1,14 @@
 package com.example.servicefeign.service;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
+
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+
 
 @Service
 public class HelloService {
 
-    @Autowired
+   /* @Autowired
     RestTemplate restTemplate;
 
    public String hiService(String name) {
@@ -20,5 +19,5 @@ public class HelloService {
        ResponseEntity<Object> forEntuty = restTemplate.getForEntity("http://SERVICE-HI/hello?name=" + name, Object.class);
        Object forObject  = restTemplate.getForObject("http://SERVICE-HI/hello?name=" + name, Object.class);
        return  "";
-   }
+   }*/
 }
