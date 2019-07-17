@@ -1,13 +1,10 @@
 package com.example.servicefeign.controller;
 
-import com.example.servicefeign.client.ProdectClient;
+
 import com.example.servicefeign.service.HelloService;
-import com.netflix.loadbalancer.DynamicServerListLoadBalancer;
-import com.netflix.loadbalancer.ZoneAwareLoadBalancer;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
-import org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -49,12 +46,12 @@ public class HelloController {
         return responde;
     }
 
-    @Autowired
+    /*@Autowired
     private ProdectClient prodectClient;
 
     @GetMapping("/getProductMsg")
     public String getProductMsg2() {
         String responce = prodectClient.produceMsg();
         return responce;
-    }
+    }*/
 }
