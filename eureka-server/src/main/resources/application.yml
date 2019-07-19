@@ -10,4 +10,9 @@ eureka:
 #client自我保护，开发环境关掉，防止调用时是关的而server显示是开的
   server:
     enable-self-preservation: false
-
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wukopass/config.git

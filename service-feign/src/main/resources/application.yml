@@ -1,7 +1,12 @@
-ureka:
+eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 spring:
   application:
     name: service-ribbon
+  rabbitmq:
+    host: 192.168.133.128
+    port: 5672
+    username: guest
+    password: guest

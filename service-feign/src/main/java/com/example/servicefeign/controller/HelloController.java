@@ -46,6 +46,11 @@ public class HelloController {
         return responde;
     }
 
+    @RequestMapping("/hello")
+    public String hello() {
+        return "hello world";
+    }
+
     /*@Autowired
     private ProdectClient prodectClient;
 
