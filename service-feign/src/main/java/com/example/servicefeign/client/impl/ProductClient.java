@@ -9,4 +9,11 @@ public class ProductClient  implements ProductApi {
     public String produceMsg() {
         return "this is my TestApi";
     }
+
+    @Override
+    public String newProductMsg() {
+        return null;
+    }
+
+
 }

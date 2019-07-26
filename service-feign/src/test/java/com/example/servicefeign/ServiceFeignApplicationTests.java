@@ -12,14 +12,14 @@ import java.util.Date;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ServiceFeignApplicationTests {
-    @Autowired
+    /*@Autowired
     private AmqpTemplate amqpTemplate;
 
 
     @Test
     public void send() {
         amqpTemplate.convertAndSend("helloQueue", "nowTime" + new Date());
-    }
+    }*/
     @Test
     public void contextLoads() {
     }
