@@ -7,3 +7,7 @@ eureka:
 spring:
   application:
     name: service-hi
+logging:
+  level:
+    root: info
+  file: logs/${spring.application.name}.log

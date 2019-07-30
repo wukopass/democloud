@@ -11,3 +11,7 @@ zuul:
     quan:
       path: /quan/**
       serviceId: service-ribbon
+logging:
+  level:
+    root: info
+  file: logs/${spring.application.name}.log

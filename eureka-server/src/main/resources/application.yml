@@ -16,3 +16,7 @@ spring:
       server:
         git:
           uri: https://github.com/wukopass/config.git
+logging:
+  level:
+    root: info
+  file: logs/server.log
