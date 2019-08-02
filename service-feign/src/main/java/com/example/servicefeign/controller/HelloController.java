@@ -20,6 +20,7 @@ public class HelloController {
 
     @Autowired
     private LoadBalancerClient loadBalancerClient;
+
   /*  @RequestMapping(value = "/hi")
     public String hi(@RequestParam String name) {
         return helloService.hiService(name);
