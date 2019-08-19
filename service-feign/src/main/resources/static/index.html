@@ -9,16 +9,14 @@
 <hr>
 <div class="form-container">
     <form id="form" action="alipay/netpay" method="post" style="width:500px;height:900px;margin: auto">
-        *商户订单 :
-        <input type="text" name="outTradeNo" value="quan11223344"><br>
         *订单名称 :
-        <input type="text" name="subject" value="航空母舰"><br>
+        <input type="text" name="des" value="航空母舰"><br>
         *付款金额 :
-        <input type="text" name="totalAmount" value="0.1" ><br>
+        <input type="text" name="total_fee" value="0.1" ><br>
         *商品描述 :
         <input type="text" name="body" value="这是国产最新的航空母舰"><br>
-        <input type="button" value="电脑网站支付" onclick="submitForm('alipay/netpay')">
-        <input type="button" value=" 手机网站支付" onclick="submitForm('alipay/wappay')">
+        <input type="text" name="tradeType"  placeholder="NATIVE"><br>
+        <input type="button" value="支付" onclick="submitForm('alipay/netpay')">
     </form>
 </div>
 </body>

@@ -11,3 +11,8 @@ logging:
   level:
     root: info
   file: logs/${spring.application.name}.log
+
+#ribbon的超时时间设置以免调用feign超时
+ribbon:
+  ReadTimeout: 30000
+  ConnectTimeout: 30000
